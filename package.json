@@ -1,0 +1,17 @@
+{
+  "name": "@pipeworx/mcp-timezone",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "MCP server for timezone data — current time, timezone conversion, and IP-based lookup",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "pipeworx",
+    "timezone"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
