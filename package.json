@@ -1,16 +1,19 @@
 {
   "name": "@pipeworx/mcp-timezone",
   "version": "0.1.0",
+  "description": "Timezone MCP — wraps WorldTimeAPI (free, no auth)",
   "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "timezone"],
   "license": "MIT",
-  "description": "MCP server for timezone data — current time, timezone conversion, and IP-based lookup",
-  "keywords": [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "pipeworx",
-    "timezone"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-timezone"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
   "devDependencies": {
     "typescript": "^5.7.0"
   }

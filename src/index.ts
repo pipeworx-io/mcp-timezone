@@ -1,13 +1,3 @@
-/**
- * Timezone MCP — wraps WorldTimeAPI (free, no auth)
- *
- * Tools:
- * - get_time_by_timezone: current time for a named IANA timezone
- * - list_timezones: all available timezone strings
- * - get_time_by_ip: current time based on caller/specified IP address
- * - convert_time: convert a datetime between two timezones
- */
-
 interface McpToolDefinition {
   name: string;
   description: string;
@@ -22,6 +12,17 @@ interface McpToolExport {
   tools: McpToolDefinition[];
   callTool: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
+
+/**
+ * Timezone MCP — wraps WorldTimeAPI (free, no auth)
+ *
+ * Tools:
+ * - get_time_by_timezone: current time for a named IANA timezone
+ * - list_timezones: all available timezone strings
+ * - get_time_by_ip: current time based on caller/specified IP address
+ * - convert_time: convert a datetime between two timezones
+ */
+
 
 const BASE_URL = 'http://worldtimeapi.org/api';
 
