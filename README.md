@@ -1,14 +1,14 @@
 # mcp-timezone
 
-Timezone MCP — wraps WorldTimeAPI (free, no auth)
+Timezone MCP — wraps timeapi.io (free, no auth)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 250+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `list_timezones` | List all IANA timezone strings available from WorldTimeAPI. |
+| `list_timezones` | List all 590+ IANA timezone strings available from timeapi.io. |
 
 ## Quick Start
 
@@ -24,7 +24,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 250+ data sources:
+Or connect to the full Pipeworx gateway for access to all 673+ data sources:
 
 ```json
 {
