@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-timezone",
-  "version": "0.1.0",
-  "description": "Timezone MCP — wraps WorldTimeAPI (free, no auth)",
+  "version": "0.1.1",
+  "description": "Timezone MCP — wraps timeapi.io (free, no auth)",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-timezone": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "timezone"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-timezone"
+    "url": "git+https://github.com/pipeworx-io/mcp-timezone.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-1dfe16e7f819da43aa9201331af81d9ed9780f39dd3aba47ae970b9b80ed50bc",
+    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
   }
 }
