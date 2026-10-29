@@ -1,0 +1,67 @@
+[
+  {
+    "name": "get_time_by_timezone",
+    "description": "Get the current date and time in a specific IANA timezone (e.g. \"America/New_York\", \"Europe/London\", \"Asia/Tokyo\").",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "timezone": {
+          "type": "string",
+          "description": "IANA timezone string, e.g. \"America/New_York\""
+        }
+      },
+      "required": [
+        "timezone"
+      ]
+    }
+  },
+  {
+    "name": "list_timezones",
+    "description": "List all 590+ IANA timezone strings available from timeapi.io.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "get_time_by_ip",
+    "description": "Get the current date and time for the timezone of an IP address (resolved via ip-api.com → timeapi.io).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ip": {
+          "type": "string",
+          "description": "IPv4 or IPv6 address to look up"
+        }
+      },
+      "required": [
+        "ip"
+      ]
+    }
+  },
+  {
+    "name": "convert_time",
+    "description": "Convert a datetime from one timezone to another. If no time is provided the current time in the source timezone is used.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "from_timezone": {
+          "type": "string",
+          "description": "Source IANA timezone, e.g. \"America/New_York\""
+        },
+        "to_timezone": {
+          "type": "string",
+          "description": "Target IANA timezone, e.g. \"Europe/Paris\""
+        },
+        "time": {
+          "type": "string",
+          "description": "Datetime to convert as \"YYYY-MM-DD HH:mm:ss\" (optional — defaults to current time in source)."
+        }
+      },
+      "required": [
+        "from_timezone",
+        "to_timezone"
+      ]
+    }
+  }
+]
