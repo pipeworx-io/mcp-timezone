@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-timezone",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Timezone MCP — wraps timeapi.io (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "timezone",
     "gatewaySlug": "timezone",
-    "sourceHash": "v1-31123fefa38045dca4ac5ce48b4dfe0dbf332a3ff31d3f663be8293242c7e2c5",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-df0bbbdd02ba66f3673f400405399c440ae5d1e23278e320a145f6143e82b7d7",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
